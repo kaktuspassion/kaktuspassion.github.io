@@ -1,0 +1,178 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Hi, I’m Haonan Chen. I am currently pursuing my Master's degree in Digital Linguistics 
+    at the University of Zurich, with a focus on computational linguistics and speech processing. 
+    I am currently working on my Master's thesis under the guidance of Prof. Eleanor Chodroff, 
+    on the topic of comparing the performance of humans and Whisper in transcribing whispered Mandarin. 
+    My academic interests lie in speech and text technology, and I am particularly passionate about AI products and multilingual learning. 
+    In my personal life, I enjoy staying active through body combat, yoga and hiphop, and I love cooking and watching movies!
+  </div>
+
+  <div class="w-full mb-5">
+    <img src="public/portfolio.png" alt="Haonan Chen" class="w-full h-auto object-cover">
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="University of Zurich  |  MA in Digital Linguistics"
+      subtitle="September 2022 – present, Zurich, Switzerland"
+    >
+    <div>
+      <ul>
+        <li><strong>•	Major and elective courses: </strong> Machine Learning in Computational Linguistics, Text Generation with Language Model, Automatic Speech Processing, Language Technology and Web Applications, Fundamentals of speech sciences and signal processing, Language Data Processing, Detecting Semantic Shift, etc.</li>
+        <li><br/></li>
+      </ul>
+    </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Beijing Foreign Studies University  |  BA in Polish Language and Culture  |  GPA: 3.93/4.00"
+      subtitle="September 2018 – June 2022, Beijing, China"
+    >
+    <div>
+      <ul>
+        <li><strong>•	Major and elective courses:</strong> Polish-Chinese Interpreting, Introduction to Language Typology, Computer Science and Python Programming, Applicative Technologies of Access Database, etc.</li>
+        <li><br/></li>
+      </ul>
+    </div>    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Interships</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="ByteDance Technology Co., Ltd.  |  AI Lab  |  Polish Linguistics Intern"
+      subtitle="February 2022 – June 2022, Beijing, China"
+    >
+    <div>
+      <ul>
+        <li><strong>•	Linguistic and Phonological Research:</strong> Conducted research on Polish phonetic features and inflectional rules, and wrote professional, comprehensive text normalization documentation to support business and algorithm development with linguistic insights.</li>
+        <li><strong>•	Data Management and Quality Control:</strong> Assisted in managing the Polish language corpus, and performed quality control and acceptance of recordings, texts, and annotation data.</li>
+        <li><strong>•	Model Performance Evaluation and Feedback:</strong> Collaborated closely with the algorithm team to provide test data based on business needs, evaluate model performance, identify errors, and suggest optimization strategies.</li>
+        <li><strong>•	International Business Support:</strong> Worked with data and algorithm teams to support multiple international business operations, including ByteDance's short video platform.</li>
+        <li><br/></li>
+      </ul>
+    </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="iFLYTEK Co., Ltd.  |  Polish Language Resource Intern"
+      subtitle="November 2020 – April 2021, Remote"
+    >
+    <div>
+      <ul>
+        <li><strong>•	Audio Quality Inspection and Corpus Creation:</strong> Systematically checked the clarity and compliance of audio data with standards. Used Audacity to record recordings with specific sampling rates and bit depths, as well as varying volumes and speech rates.</li>
+        <li><strong>•	Text Data Annotation and Quality Control:</strong> Checked the grammatical accuracy of the Polish language corpus. Annotated corpus data for PoS and non-Polish entities. Completed quality checks on over 10,000 corpus entries and created more than 3,000 new entries.</li>
+        <li><strong>•	Linguistic support for MTPE Project:</strong> Evaluated the effectiveness of machine translations, summarized patterns, and wrote documentations of optimization suggestions.</li>
+        <li><strong>•	Professional Training and Team Collaboration:</strong> Received training related to corpus management and participated in online Q&A sessions to address semantic and grammatical issues related to Polish.</li>
+        <li><br/></li>
+      </ul>
+    </div>    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Projects</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="WordWizard - Multilingual Crossword Website | Team Leader"
+      subtitle="October 2023 – January 2024, Web Application and Language Technology"
+    >
+    <div>
+      <ul>
+        <li> Developed a customizable multilingual crossword game supporting English, Spanish, French, German, Swedish, and Dutch, tailored to users' language proficiency levels (CEFR A1-C1). Implemented interactive elements such as hints, a timer, and answer verification to create an engaging and enjoyable gaming experience. </li>
+        <li><strong>•	Project Schedule and Execution: </strong> Collected and pre-processed multilingual datasets and dictionaries from CEFRLex to meet project requirements.</li>
+        <li><strong>•	Data Collection and Preprocessing: </strong> Managed the entire project lifecycle from concept to implementation, including requirement analysis, product positioning, page design, and development. Created and monitored the project schedule, ensuring smooth progress and final delivery.</li>
+        <li><strong>•	Webpage and User Experience Design: </strong> Designed and structured the webpage, focusing on a intuitive and user-friendly visual style.</li>
+        <li><strong>•	Core Algorithm Development: </strong> Developed the algorithm for generating multilingual crossword puzzles.</li>
+        <li><strong>•	Team Collaboration and Management: </strong> Assigned tasks based on project scope, set milestone goals, and ensured team alignment and cooperation. Conducted regular progress meetings to track project status and address any issues promptly.</li>
+        <li><strong>•	Methods:</strong> Python, HTML, CSS, Javascript, SQL</li>
+        <li><br/></li>
+      </ul>
+    </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="A Differential Study of the Performance of Whisper ASR and Human on Transcription Task of whispered Mandarin Speech"
+      subtitle="2023 Fall, Automatic Speech Processing"
+    >
+    <div>
+      <ul>
+        <li><strong>•	Topic: </strong> This research compares the performance of the WHISPER automatic speech recognition (ASR) system and human transcription in transcribing whispered Mandarin speech. Results show that WHISPER performs consistently across text types, it is outperformed by human transcription.</li>
+        <li><strong>•	Methods:</strong> Python, Paired samples t-test</li>
+        <li><br/></li>
+      </ul>
+    </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Rhythmic Variability in Swiss German Dialects"
+      subtitle="2023 Fall, Computational Processing of Speech Rhythm for Language and Speaker Classification"
+    >
+    <div>
+      <ul>
+        <li><strong>•	Topic:</strong> This research explores the use of rhythmic metrics, specifically nPVI and VarcoV, in classifying Swiss German dialects from Basel, Bern, and Zurich. The results shows that nPVI and VarcoV are not suitable metrics for dialect differentiation.</li>
+        <li><strong>•	Methods:</strong> Computation modeling in R, Linear Discriminant Analysis (LDA), Exploratory Data Analysis (EDA)</li>
+        <li><br/></li>
+      </ul>
+    </div>    
+    </TimeLineElement>
+    <TimeLineElement
+      title="Rhythmic Variability Between Young and Old Age Groups"
+      subtitle="2023 Fall, Computational Processing of Speech Rhythm for Language and Speaker Classification"
+    >
+    <div>
+      <ul>
+        <li><strong>•	Topic: </strong> This study examines the impact of a set of durational and intensity rhythmic metrics to classify speakers into young and old age groups. As shown in the result, deltaV, V% and stdevP stand out as the top predictors. </li>
+        <li><strong>•	Methods:</strong> Computation modeling in R, Random forest, Decision tree</li>
+        <li><br/></li>
+      </ul>
+    </div>
+    </TimeLineElement>
+  </div>
+
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a target="_blank">2020 – 2021 National Exchange Scholarship of China Scholarship Council (CSC, 1 year)</a>
+    </li>
+    <li>
+      <a target="_blank">2019 – 2020 University second-class scholarship, ranking 2nd </a>
+    </li>
+    <li>
+      <a target="_blank">2018 – 2019 University first-class scholarship, ranking 1st</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a target="_blank"><b>Technics:</b> Python, Pytorch, R, Git, SQL, CSS, HTML, Javascript, Excel, Office</a>
+    </li>
+    <li>
+      <a target="_blank"><b>Languages:</b> Proficient in English(IELTS, 7.5) and Polish(CEFR, B2); Native in Chinese; Beginner in German, French and Spanish </a>
+    </li>
+    <li>
+      <a target="_blank"><b>Tools:</b> Praat, Xmind, Gorilla, ELAN, Markdown, AI tools(GPTs etc.)</a>
+    </li>
+  </ul>
+</BaseLayout>

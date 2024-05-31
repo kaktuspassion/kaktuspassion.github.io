@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+  </div>
+
+  
+  <HorizontalCard
+    title="WordWizard - Multilingual Crossword Game"
+    img="/project_wordwizard/main.webp"
+    desc="2023 Fall, Web Application and Language Technology"
+    url="https://github.com/kaktuspassion/MultilingualCrosswordGame"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Rhythmic Variability in Swiss German Dialects"
+    img="/project_rhythmic1/main.png"
+    desc="2023 Fall, Computational Processing of Speech Rhythm for Language and Speaker Classification"
+    url="https://github.com/kaktuspassion/rhythmic_variability_in_swiss_dialects"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Rhythmic Variability Between Young and Old Age Groups"
+    img="/project_rhythmic2/main.png"
+    desc="2023 Fall, Computational Processing of Speech Rhythm for Language and Speaker Classification"
+    url="https://github.com/kaktuspassion/rhythmic_variability_with_age"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Comparison of the Performance of Whisper ASR and Human on Transcription Task of whispered Mandarin Speech"
+    img="/project_whisper/main.png"
+    desc="2023 Fall, Automatic Speech Processing"
+    url="https://github.com/kaktuspassion/whisper_vs_hsr"
+  />
+
+</BaseLayout>
