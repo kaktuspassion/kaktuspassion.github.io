@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+import { Picture } from "astro:assets";
+import myImage from "../../public/cv.png"; 
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
@@ -17,10 +19,14 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     In my personal life, I enjoy staying active through body combat, yoga and hiphop, and I love cooking and watching movies!
   </div>
 
-  <div class="w-full mb-5">
-    <img src="/public/cv.png" alt="Haonan Chen" class="w-full h-auto object-cover">
-  </div>
+  <Picture
+  src={myImage}
+  alt="Learning route"
+  />
 
+  <br />
+  <br />
+  
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
   </div>
